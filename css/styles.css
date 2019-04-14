@@ -329,7 +329,7 @@ body {
   line-height: 1.6;
   color: #333;
   min-height: 100%;
-  background-color: #939393;
+  background-color: #fdde7e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,6 @@ body {
   max-width: 1200px;
   min-width: 550px;
   width: 90%;
-  background-color: #fdde7e;
   height: 600px;
   margin: auto;
   display: -webkit-box;
@@ -368,11 +367,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 80px 30px;
-  -webkit-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2); }
+  padding: 80px 30px; }
 
 .item {
+  padding: 1.5rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,10 +394,16 @@ body {
   color: #333;
   -webkit-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
-  height: 445px; }
+  height: 445px;
+  max-width: 380px; }
   .item__prices {
+    max-width: 90%;
     color: #02995b;
-    font-size: 7rem; }
+    font-size: 7rem;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
     .item__prices:before {
       content: "$"; }
   .item__picture {
@@ -417,29 +421,30 @@ body {
     width: 100%;
     height: 100%; }
   .item__title {
+    max-width: 90%;
     font-size: 5.6rem;
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: 400; }
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
   .item__info {
     font-family: 'Lato', 'Arial', sans-serif;
     text-align: center;
-    margin-top: 0; }
+    margin-top: 0;
+    max-width: 90%;
+    overflow: hidden;
+    white-space: wrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    max-height: 6.3rem; }
   .item--big {
     border-box: contain;
     height: 500px; }
-  .item__link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    outline: none; }
   .item:hover, .item:focus, .item:active {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
